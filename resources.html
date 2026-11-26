@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A practical student guide to safe internet browsing and malware prevention.">
+<meta name="theme-color" content="#07111f">
+<title>Prevention and References | Safe Browsing Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">⌁</span> SAFE<span style="color:var(--accent)">/</span>GUARD</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+<nav id="main-nav" aria-label="Main navigation"><ul><li><a href="index.html" >Home</a></li><li><a href="content.html" >Threats and Warning Signs</a></li><li><a href="resources.html" aria-current="page">Prevention and References</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="hero"><div class="wrap">
+<div class="eyebrow">IT 111 · INTRODUCTION TO COMPUTING</div>
+<h1>Make safety<br><span>a daily habit.</span></h1><p class="lead">Seven practical habits, a clear response plan, and trusted resources to help you browse with confidence.</p>
+
+</div></div>
+
+<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / PREVENTION</div><h2>Seven habits for safe browsing</h2></div><p>Small choices made consistently can reduce the chance of malware infection and account compromise.</p></div>
+<ol class="steps">
+<li><strong>Keep everything updated.</strong> Turn on automatic updates for your operating system, browser, and apps.</li>
+<li><strong>Use trusted security software.</strong> Keep built-in protection such as Windows Security on, and run scans regularly.</li>
+<li><strong>Download only from official sources.</strong> Use the publisher’s own site or an official app store.</li>
+<li><strong>Check the address before you sign in.</strong> Read the real domain and type it yourself when unsure.</li>
+<li><strong>Use strong, unique passwords with multi-factor authentication.</strong> A password manager makes this practical.</li>
+<li><strong>Think before you click.</strong> Do not open unexpected attachments or links, even from friends, without confirming.</li>
+<li><strong>Back up important files.</strong> Keep a copy on a separate drive or cloud storage so ransomware cannot hold it hostage.</li>
+</ol></div></section>
+<section class="alt-bg"><div class="wrap"><div class="eyebrow">02 / SMART DECISIONS</div><h2>Do and do not</h2><div class="table-scroll"><table><caption>Quick comparison of safe and unsafe behavior</caption><thead><tr><th>Situation</th><th>Safer choice</th><th>Risky choice</th></tr></thead><tbody>
+<tr><th>Need new software</th><td class="do">Get it from the official website</td><td class="dont">Install a cracked copy from a file-sharing site</td></tr>
+<tr><th>Pop-up says “Your PC is infected”</th><td class="do">Close the tab and run your own scan</td><td class="dont">Call the number or click “Fix now”</td></tr>
+<tr><th>Using public Wi-Fi</th><td class="do">Avoid banking, or use mobile data</td><td class="dont">Sign in to every account on an open network</td></tr>
+<tr><th>Unknown USB drive</th><td class="do">Do not plug it in</td><td class="dont">Open it to see who owns it</td></tr>
+</tbody></table></div></div></section>
+<section><div class="wrap"><div class="eyebrow">03 / INCIDENT RESPONSE</div><h2>If you think your device is infected</h2><ol class="steps">
+<li><strong>Disconnect.</strong> Turn off Wi-Fi or unplug the network cable so malware cannot spread or send data out.</li>
+<li><strong>Scan.</strong> Run a full scan with your security software, and remove anything it finds.</li>
+<li><strong>Change passwords.</strong> Use a different, clean device to change passwords for important accounts.</li>
+<li><strong>Restore if needed.</strong> If the problem remains, reset the device and recover files from your backup.</li>
+<li><strong>Report and learn.</strong> Tell your school IT office, and note how it happened so it does not repeat.</li>
+</ol></div></section>
+<section class="alt-bg" id="references"><div class="wrap"><div class="eyebrow">04 / LEARN MORE</div><h2>References</h2><div class="box">
+<ul>
+<li>Cybersecurity and Infrastructure Security Agency (CISA). <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">Secure Our World</a>.</li>
+<li>U.S. Federal Trade Commission. <a href="https://consumer.ftc.gov/articles/how-recognize-remove-avoid-malware" target="_blank" rel="noopener noreferrer">How to Recognize, Remove, and Avoid Malware</a>.</li>
+<li>UK National Cyber Security Centre. <a href="https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online" target="_blank" rel="noopener noreferrer">Top tips for staying secure online</a>.</li>
+<li>National Cybersecurity Alliance. <a href="https://staysafeonline.org" target="_blank" rel="noopener noreferrer">Stay Safe Online</a>.</li>
+</ul><p class="small">Illustrations on this site are original and made with HTML and CSS, so no outside images need attribution.</p>
+</div></div></section>
+<section id="ai-use"><div class="wrap"><div class="eyebrow">05 / TRANSPARENCY</div><h2>AI usage declaration</h2><div class="box"><p>An AI assistant (Claude by Anthropic) was used to help draft the page structure, CSS, and initial text. The group reviewed the content for accuracy against the references above and can explain the code.</p></div></div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap footer-inner">
+<div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">⌁</span> SAFE<span style="color:var(--accent)">/</span>GUARD</a><p class="small">Think before you click. Browse with confidence.</p></div>
+<div><p><strong>IT 111 – Introduction to Computing | Final Project</strong></p><p>Topic: Safe Internet Browsing and Malware Prevention</p><p>Group members: [Member 1 Name], [Member 2 Name], [Member 3 Name]</p><p><a href="resources.html#references">References</a> · <a href="resources.html#ai-use">AI usage declaration</a></p></div>
+</div></footer>
+
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});}
+const progress=document.createElement('div');progress.className='progress';document.body.appendChild(progress);
+function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';}
+addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('section,.box,.panel').forEach(el=>el.classList.add('reveal'));document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
+</script>
+
+<!-- Additional JavaScript file -->
+<script src="script.js" defer></script>
+
+</body></html>

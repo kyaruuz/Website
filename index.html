@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A practical student guide to safe internet browsing and malware prevention.">
+<meta name="theme-color" content="#07111f">
+<title>Home | Safe Browsing Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">⌁</span> SAFE<span style="color:var(--accent)">/</span>GUARD</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+<nav id="main-nav" aria-label="Main navigation"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="content.html" >Threats and Warning Signs</a></li><li><a href="resources.html" >Prevention and References</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="hero"><div class="wrap">
+<div class="eyebrow">IT 111 · INTRODUCTION TO COMPUTING</div>
+<h1>Browse smarter.<br><span>Stay protected.</span></h1><p class="lead">Most infections do not start with clever hacking. They start with one careless click. Learn what to look for before you click.</p>
+<div class="hero-actions"><a class="btn" href="content.html">Explore the threats <span aria-hidden="true">→</span></a><a class="btn secondary" href="resources.html">Learn prevention</a></div>
+</div></div>
+
+<section><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">START HERE</div><h2>Read the address, not just the padlock.</h2></div>
+<p>A secure-looking page is not automatically trustworthy. Learn to identify the real website before sharing information.</p></div>
+<p>The real website is whatever comes right before the first single slash. Compare these two addresses. Both start with https and both show a padlock.</p>
+<div class="demo">
+<div class="box good"><span class="tag good">✓ Genuine example</span><div class="urlbar"><span class="fade">https://</span><strong>google.com</strong><span class="fade">/search</span></div><p>The site name ends at <code>google.com</code>. Everything after that is just a page on that site.</p></div>
+<div class="box bad"><span class="tag bad">! Fake example</span><div class="urlbar"><span class="fade">https://google.com.</span><strong>secure-login.example</strong><span class="fade">/verify</span></div><p>The real site is <code>secure-login.example</code>. The word “google” is only a decoy placed in front of it.</p></div>
+</div><p class="note"><strong>Remember:</strong> a padlock means the connection is encrypted. It does not prove that the website is honest.</p>
+</div></section>
+<section class="alt-bg"><div class="wrap"><div class="section-head"><div><div class="eyebrow">WHAT YOU'LL LEARN</div><h2>Build safer digital habits.</h2></div><p>Four practical goals guide this website, from understanding threats to responding when something goes wrong.</p></div>
+<div class="grid">
+<div class="box"><div class="card-icon">◈</div><h3>Understand malware</h3><p>Name the main types of malicious software and explain how each one harms a device or its owner.</p></div>
+<div class="box"><div class="card-icon">⌕</div><h3>Spot risky sites</h3><p>Recognize fake links, misleading pop-ups, and unsafe downloads before they cause damage.</p></div>
+<div class="box"><div class="card-icon">✓</div><h3>Build safe habits</h3><p>Apply simple daily practices such as updates, backups, and careful downloading.</p></div>
+<div class="box"><div class="card-icon">↗</div><h3>Respond to infection</h3><p>Know what to do in the first minutes after suspecting that a device is infected.</p></div>
+</div></div></section>
+<section><div class="wrap"><div class="eyebrow">EXPLORE THE GUIDE</div><h2>Three pages. One safer internet.</h2>
+<div class="grid">
+<a class="box" href="content.html" style="text-decoration:none;color:inherit"><div class="card-icon">01</div><h3>Threats and warning signs →</h3><p>Explore malware types, common infection paths, and signs of risky websites.</p></a>
+<a class="box" href="resources.html" style="text-decoration:none;color:inherit"><div class="card-icon">02</div><h3>Prevention and references →</h3><p>Follow seven safety habits and learn what to do if you suspect an infection.</p></a>
+</div></div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap footer-inner">
+<div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">⌁</span> SAFE<span style="color:var(--accent)">/</span>GUARD</a><p class="small">Think before you click. Browse with confidence.</p></div>
+<div><p><strong>IT 111 – Introduction to Computing | Final Project</strong></p><p>Topic: Safe Internet Browsing and Malware Prevention</p><p>Group members: Ahmad C Macangga, Earl Brandon V Bautista, Prince Daryl A Espina</p><p><a href="resources.html#references">References</a> · <a href="resources.html#ai-use">AI usage declaration</a></p></div>
+</div></footer>
+
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});}
+const progress=document.createElement('div');progress.className='progress';document.body.appendChild(progress);
+function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';}
+addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('section,.box,.panel').forEach(el=>el.classList.add('reveal'));document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
+</script>
+
+<!-- Additional JavaScript file -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
